@@ -1,8 +1,11 @@
 # Ignore all directories named "wandb" at any depth
 wandb/
+ac_case/
+log/
 
 # Ignore all PyTorch and MATLAB model/data files
 *.pth
 *.mat
 *.pt
 *.csv
+*.log
