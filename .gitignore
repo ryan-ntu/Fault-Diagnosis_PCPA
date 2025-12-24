@@ -3,6 +3,8 @@ wandb/
 ac_case/
 log/
 .vscode/
+.idea/
+__pycache__/
 
 # Ignore all PyTorch and MATLAB model/data files
 *.pth
