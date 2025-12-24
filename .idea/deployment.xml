@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="s123mdg36_03@gpu36.dynip.ntu.edu.sg:22 password" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+    <option name="confirmBeforeUploading" value="false" />
+    <serverData>
+      <paths name="s123mdg36_03@gpu36.dynip.ntu.edu.sg:22 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/GNN_POWER" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

@@ -1,0 +1,285 @@
+nohup: ignoring input
+2025-11-10 22:08:54,968 | INFO | ==== main.py started ====
+2025-11-10 22:08:54,968 | INFO | Args: {'model': 'cnn', 'epochs': 500, 'batch': 64, 'lr': 0.0001, 'patience': 20, 'seed': 23, 'device': 'cuda:0', 'save_path': None, 'optuna': True, 'trials': 20, 'verbose': True, 'log_file': 'logs/cnn_run.log', 'start_node': 6, 'length_V_H': 8}
+[I 2025-11-10 22:09:16,250] A new study created in memory with name: no-name-db8aa82c-08ca-4e52-bd01-c528dbff15b0
+2025-11-10 22:09:16,250 | INFO | Optuna study created (direction=minimize). Starting optimize...
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.668504  val_f1=0.6097  best_val_f1=0.6097
+Epoch 11/500  train_loss=0.490074  val_f1=0.7666  best_val_f1=0.7666
+Epoch 21/500  train_loss=0.463355  val_f1=0.7687  best_val_f1=0.7737
+Epoch 31/500  train_loss=0.448923  val_f1=0.7642  best_val_f1=0.7737
+Early stopping triggered
+Test F1: 0.7752
+[I 2025-11-10 22:19:20,011] Trial 0 finished with value: 0.2262745098039216 and parameters: {'lr': 0.0001, 'batch_size': 128, 'd_model': 256, 'nhead': 2, 'nlayers': 2, 'dim_ff': 64, 'dropout': 0.3}. Best is trial 0 with value: 0.2262745098039216.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.695005  val_f1=0.5006  best_val_f1=0.5006
+Epoch 11/500  train_loss=0.693184  val_f1=0.5004  best_val_f1=0.5010
+Epoch 21/500  train_loss=0.693190  val_f1=0.5004  best_val_f1=0.5018
+Epoch 31/500  train_loss=0.693208  val_f1=0.5000  best_val_f1=0.5018
+Early stopping triggered
+Test F1: 0.5027
+[I 2025-11-10 22:26:00,371] Trial 1 finished with value: 0.49821568627450985 and parameters: {'lr': 0.01, 'batch_size': 512, 'd_model': 256, 'nhead': 2, 'nlayers': 1, 'dim_ff': 64, 'dropout': 0.2}. Best is trial 0 with value: 0.2262745098039216.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.612661  val_f1=0.6764  best_val_f1=0.6764
+Epoch 11/500  train_loss=0.467409  val_f1=0.7308  best_val_f1=0.7489
+Epoch 21/500  train_loss=0.421346  val_f1=0.6648  best_val_f1=0.7489
+Early stopping triggered
+Test F1: 0.7492
+[I 2025-11-10 22:32:20,235] Trial 2 finished with value: 0.2510539215686275 and parameters: {'lr': 0.01, 'batch_size': 128, 'd_model': 32, 'nhead': 2, 'nlayers': 1, 'dim_ff': 64, 'dropout': 0.2}. Best is trial 0 with value: 0.2262745098039216.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.693309  val_f1=0.5006  best_val_f1=0.5006
+Epoch 11/500  train_loss=0.693296  val_f1=0.5011  best_val_f1=0.5018
+Epoch 21/500  train_loss=0.693304  val_f1=0.5001  best_val_f1=0.5018
+Epoch 31/500  train_loss=0.693293  val_f1=0.4999  best_val_f1=0.5018
+Early stopping triggered
+Test F1: 0.5027
+[I 2025-11-10 22:45:59,746] Trial 3 finished with value: 0.49821568627450985 and parameters: {'lr': 0.01, 'batch_size': 64, 'd_model': 32, 'nhead': 4, 'nlayers': 2, 'dim_ff': 256, 'dropout': 0.4}. Best is trial 0 with value: 0.2262745098039216.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.670142  val_f1=0.5763  best_val_f1=0.5763
+Epoch 11/500  train_loss=0.494877  val_f1=0.7582  best_val_f1=0.7632
+Epoch 21/500  train_loss=0.461203  val_f1=0.7720  best_val_f1=0.7728
+Epoch 31/500  train_loss=0.444616  val_f1=0.7744  best_val_f1=0.7804
+Epoch 41/500  train_loss=0.431750  val_f1=0.7724  best_val_f1=0.7873
+Epoch 51/500  train_loss=0.422909  val_f1=0.7875  best_val_f1=0.7894
+Epoch 61/500  train_loss=0.415438  val_f1=0.7828  best_val_f1=0.7894
+Epoch 71/500  train_loss=0.403807  val_f1=0.7806  best_val_f1=0.7924
+Epoch 81/500  train_loss=0.396918  val_f1=0.7800  best_val_f1=0.7935
+Epoch 91/500  train_loss=0.390613  val_f1=0.7881  best_val_f1=0.7935
+Epoch 101/500  train_loss=0.384290  val_f1=0.7847  best_val_f1=0.7955
+Epoch 111/500  train_loss=0.379028  val_f1=0.7831  best_val_f1=0.7995
+Epoch 121/500  train_loss=0.375863  val_f1=0.7920  best_val_f1=0.7995
+Early stopping triggered
+Test F1: 0.8012
+[I 2025-11-10 23:20:13,765] Trial 4 finished with value: 0.20050980392156859 and parameters: {'lr': 0.0001, 'batch_size': 128, 'd_model': 128, 'nhead': 2, 'nlayers': 2, 'dim_ff': 64, 'dropout': 0.2}. Best is trial 4 with value: 0.20050980392156859.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.595335  val_f1=0.7175  best_val_f1=0.7175
+Epoch 11/500  train_loss=0.430789  val_f1=0.7923  best_val_f1=0.7923
+Epoch 21/500  train_loss=0.417922  val_f1=0.7986  best_val_f1=0.8011
+Epoch 31/500  train_loss=0.411913  val_f1=0.8007  best_val_f1=0.8041
+Epoch 41/500  train_loss=0.407245  val_f1=0.8056  best_val_f1=0.8080
+Epoch 51/500  train_loss=0.403826  val_f1=0.8065  best_val_f1=0.8085
+Epoch 61/500  train_loss=0.401873  val_f1=0.8087  best_val_f1=0.8099
+Epoch 71/500  train_loss=0.399728  val_f1=0.8046  best_val_f1=0.8099
+Early stopping triggered
+Test F1: 0.8108
+[I 2025-11-10 23:53:32,482] Trial 5 finished with value: 0.19008823529411767 and parameters: {'lr': 0.001, 'batch_size': 64, 'd_model': 32, 'nhead': 4, 'nlayers': 2, 'dim_ff': 256, 'dropout': 0.4}. Best is trial 5 with value: 0.19008823529411767.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.693357  val_f1=0.4996  best_val_f1=0.4996
+Epoch 11/500  train_loss=0.693291  val_f1=0.5000  best_val_f1=0.5013
+Epoch 21/500  train_loss=0.693293  val_f1=0.5009  best_val_f1=0.5016
+Epoch 31/500  train_loss=0.693288  val_f1=0.4990  best_val_f1=0.5016
+Epoch 41/500  train_loss=0.693288  val_f1=0.5001  best_val_f1=0.5016
+Early stopping triggered
+Test F1: 0.5024
+[I 2025-11-11 00:08:07,178] Trial 6 finished with value: 0.49836274509803924 and parameters: {'lr': 0.01, 'batch_size': 64, 'd_model': 128, 'nhead': 8, 'nlayers': 1, 'dim_ff': 32, 'dropout': 0.3}. Best is trial 5 with value: 0.19008823529411767.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.661832  val_f1=0.6203  best_val_f1=0.6203
+Epoch 11/500  train_loss=0.463905  val_f1=0.6952  best_val_f1=0.7083
+Epoch 21/500  train_loss=0.447723  val_f1=0.6969  best_val_f1=0.7085
+Epoch 31/500  train_loss=0.438586  val_f1=0.6936  best_val_f1=0.7108
+Epoch 41/500  train_loss=0.432202  val_f1=0.6978  best_val_f1=0.7108
+Early stopping triggered
+Test F1: 0.7130
+[I 2025-11-11 00:19:46,477] Trial 7 finished with value: 0.28922058823529406 and parameters: {'lr': 0.001, 'batch_size': 256, 'd_model': 128, 'nhead': 8, 'nlayers': 3, 'dim_ff': 32, 'dropout': 0.4}. Best is trial 5 with value: 0.19008823529411767.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.695088  val_f1=0.5001  best_val_f1=0.5001
+Epoch 11/500  train_loss=0.693216  val_f1=0.5002  best_val_f1=0.5009
+Epoch 21/500  train_loss=0.693234  val_f1=0.5018  best_val_f1=0.5018
+Epoch 31/500  train_loss=0.693216  val_f1=0.5008  best_val_f1=0.5018
+Early stopping triggered
+Test F1: 0.5027
+[I 2025-11-11 00:25:27,991] Trial 8 finished with value: 0.49821568627450985 and parameters: {'lr': 0.01, 'batch_size': 256, 'd_model': 256, 'nhead': 2, 'nlayers': 1, 'dim_ff': 128, 'dropout': 0.4}. Best is trial 5 with value: 0.19008823529411767.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.693317  val_f1=0.5001  best_val_f1=0.5001
+Epoch 11/500  train_loss=0.693290  val_f1=0.5001  best_val_f1=0.5007
+Epoch 21/500  train_loss=0.693304  val_f1=0.5001  best_val_f1=0.5015
+Epoch 31/500  train_loss=0.693306  val_f1=0.5018  best_val_f1=0.5018
+Epoch 41/500  train_loss=0.693301  val_f1=0.5014  best_val_f1=0.5018
+Epoch 51/500  train_loss=0.693300  val_f1=0.5007  best_val_f1=0.5018
+Early stopping triggered
+Test F1: 0.5027
+[I 2025-11-11 00:45:32,485] Trial 9 finished with value: 0.49821568627450985 and parameters: {'lr': 0.01, 'batch_size': 64, 'd_model': 64, 'nhead': 4, 'nlayers': 2, 'dim_ff': 256, 'dropout': 0.3}. Best is trial 5 with value: 0.19008823529411767.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.670304  val_f1=0.5817  best_val_f1=0.5817
+Epoch 11/500  train_loss=0.452343  val_f1=0.7776  best_val_f1=0.7792
+Epoch 21/500  train_loss=0.427859  val_f1=0.7996  best_val_f1=0.7996
+Epoch 31/500  train_loss=0.418712  val_f1=0.8059  best_val_f1=0.8059
+Epoch 41/500  train_loss=0.413101  val_f1=0.8029  best_val_f1=0.8059
+Epoch 51/500  train_loss=0.409613  val_f1=0.8047  best_val_f1=0.8076
+Epoch 61/500  train_loss=0.405932  val_f1=0.8086  best_val_f1=0.8101
+Epoch 71/500  train_loss=0.404350  val_f1=0.8070  best_val_f1=0.8101
+Epoch 81/500  train_loss=0.401410  val_f1=0.8096  best_val_f1=0.8102
+Epoch 91/500  train_loss=0.399826  val_f1=0.8093  best_val_f1=0.8104
+Epoch 101/500  train_loss=0.398746  val_f1=0.8106  best_val_f1=0.8107
+Epoch 111/500  train_loss=0.396742  val_f1=0.8103  best_val_f1=0.8128
+Epoch 121/500  train_loss=0.395777  val_f1=0.8083  best_val_f1=0.8128
+Early stopping triggered
+Test F1: 0.8137
+[I 2025-11-11 01:08:51,787] Trial 10 finished with value: 0.18720588235294122 and parameters: {'lr': 0.001, 'batch_size': 512, 'd_model': 32, 'nhead': 4, 'nlayers': 3, 'dim_ff': 256, 'dropout': 0.4}. Best is trial 10 with value: 0.18720588235294122.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.671173  val_f1=0.5774  best_val_f1=0.5774
+Epoch 11/500  train_loss=0.453077  val_f1=0.7870  best_val_f1=0.7870
+Epoch 21/500  train_loss=0.425951  val_f1=0.7949  best_val_f1=0.7949
+Epoch 31/500  train_loss=0.416501  val_f1=0.7972  best_val_f1=0.7989
+Epoch 41/500  train_loss=0.411102  val_f1=0.7975  best_val_f1=0.8033
+Epoch 51/500  train_loss=0.407738  val_f1=0.8071  best_val_f1=0.8071
+Epoch 61/500  train_loss=0.404388  val_f1=0.8059  best_val_f1=0.8073
+Epoch 71/500  train_loss=0.402677  val_f1=0.8067  best_val_f1=0.8098
+Epoch 81/500  train_loss=0.399383  val_f1=0.8044  best_val_f1=0.8114
+Epoch 91/500  train_loss=0.397199  val_f1=0.8055  best_val_f1=0.8114
+Early stopping triggered
+Test F1: 0.8119
+[I 2025-11-11 01:25:44,440] Trial 11 finished with value: 0.1885539215686275 and parameters: {'lr': 0.001, 'batch_size': 512, 'd_model': 32, 'nhead': 4, 'nlayers': 3, 'dim_ff': 256, 'dropout': 0.4}. Best is trial 10 with value: 0.18720588235294122.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.670431  val_f1=0.5801  best_val_f1=0.5801
+Epoch 11/500  train_loss=0.456601  val_f1=0.7729  best_val_f1=0.7729
+Epoch 21/500  train_loss=0.429704  val_f1=0.7933  best_val_f1=0.7952
+Epoch 31/500  train_loss=0.418647  val_f1=0.7996  best_val_f1=0.8002
+Epoch 41/500  train_loss=0.411938  val_f1=0.8027  best_val_f1=0.8048
+Epoch 51/500  train_loss=0.407199  val_f1=0.8063  best_val_f1=0.8074
+Epoch 61/500  train_loss=0.403850  val_f1=0.8076  best_val_f1=0.8086
+Epoch 71/500  train_loss=0.399906  val_f1=0.8057  best_val_f1=0.8087
+Epoch 81/500  train_loss=0.398377  val_f1=0.8080  best_val_f1=0.8109
+Epoch 91/500  train_loss=0.396263  val_f1=0.8129  best_val_f1=0.8129
+Epoch 101/500  train_loss=0.393802  val_f1=0.8056  best_val_f1=0.8129
+Epoch 111/500  train_loss=0.392470  val_f1=0.8056  best_val_f1=0.8129
+Early stopping triggered
+Test F1: 0.8143
+[I 2025-11-11 01:46:17,998] Trial 12 finished with value: 0.18710784313725493 and parameters: {'lr': 0.001, 'batch_size': 512, 'd_model': 32, 'nhead': 4, 'nlayers': 3, 'dim_ff': 256, 'dropout': 0.4}. Best is trial 12 with value: 0.18710784313725493.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.671196  val_f1=0.5812  best_val_f1=0.5812
+Epoch 11/500  train_loss=0.456036  val_f1=0.7708  best_val_f1=0.7708
+Epoch 21/500  train_loss=0.433446  val_f1=0.7920  best_val_f1=0.7920
+Epoch 31/500  train_loss=0.423200  val_f1=0.7903  best_val_f1=0.7974
+Epoch 41/500  train_loss=0.416022  val_f1=0.8000  best_val_f1=0.8010
+Epoch 51/500  train_loss=0.410732  val_f1=0.8005  best_val_f1=0.8042
+Epoch 61/500  train_loss=0.407320  val_f1=0.8001  best_val_f1=0.8042
+Epoch 71/500  train_loss=0.402757  val_f1=0.8036  best_val_f1=0.8054
+Epoch 81/500  train_loss=0.399506  val_f1=0.8009  best_val_f1=0.8054
+Early stopping triggered
+Test F1: 0.8069
+[I 2025-11-11 02:01:47,896] Trial 13 finished with value: 0.19461764705882356 and parameters: {'lr': 0.001, 'batch_size': 512, 'd_model': 32, 'nhead': 4, 'nlayers': 3, 'dim_ff': 256, 'dropout': 0.4}. Best is trial 12 with value: 0.18710784313725493.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.666953  val_f1=0.6133  best_val_f1=0.6133
+Epoch 11/500  train_loss=0.469493  val_f1=0.7823  best_val_f1=0.7823
+Epoch 21/500  train_loss=0.444063  val_f1=0.7893  best_val_f1=0.7900
+Epoch 31/500  train_loss=0.428207  val_f1=0.7760  best_val_f1=0.7900
+Early stopping triggered
+Test F1: 0.7897
+[I 2025-11-11 02:09:10,272] Trial 14 finished with value: 0.21004411764705877 and parameters: {'lr': 0.001, 'batch_size': 512, 'd_model': 64, 'nhead': 4, 'nlayers': 3, 'dim_ff': 128, 'dropout': 0.4}. Best is trial 12 with value: 0.18710784313725493.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.671983  val_f1=0.5809  best_val_f1=0.5809
+Epoch 11/500  train_loss=0.465394  val_f1=0.7732  best_val_f1=0.7732
+Epoch 21/500  train_loss=0.435484  val_f1=0.7920  best_val_f1=0.7920
+Epoch 31/500  train_loss=0.423161  val_f1=0.8002  best_val_f1=0.8002
+Epoch 41/500  train_loss=0.415468  val_f1=0.8022  best_val_f1=0.8059
+Epoch 51/500  train_loss=0.411119  val_f1=0.8024  best_val_f1=0.8067
+Epoch 61/500  train_loss=0.407342  val_f1=0.8057  best_val_f1=0.8078
+Epoch 71/500  train_loss=0.404588  val_f1=0.8100  best_val_f1=0.8100
+Epoch 81/500  train_loss=0.401445  val_f1=0.8103  best_val_f1=0.8107
+Epoch 91/500  train_loss=0.398844  val_f1=0.8113  best_val_f1=0.8113
+Epoch 101/500  train_loss=0.396935  val_f1=0.8055  best_val_f1=0.8113
+Epoch 111/500  train_loss=0.395861  val_f1=0.8049  best_val_f1=0.8113
+Early stopping triggered
+Test F1: 0.8115
+[I 2025-11-11 02:29:46,107] Trial 15 finished with value: 0.18872549019607843 and parameters: {'lr': 0.001, 'batch_size': 512, 'd_model': 32, 'nhead': 4, 'nlayers': 3, 'dim_ff': 256, 'dropout': 0.4}. Best is trial 12 with value: 0.18710784313725493.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.670027  val_f1=0.5892  best_val_f1=0.5892
+Epoch 11/500  train_loss=0.453393  val_f1=0.7826  best_val_f1=0.7826
+Epoch 21/500  train_loss=0.423936  val_f1=0.7930  best_val_f1=0.7982
+Epoch 31/500  train_loss=0.412736  val_f1=0.8044  best_val_f1=0.8051
+Epoch 41/500  train_loss=0.406962  val_f1=0.8070  best_val_f1=0.8083
+Epoch 51/500  train_loss=0.402241  val_f1=0.8085  best_val_f1=0.8098
+Epoch 61/500  train_loss=0.398917  val_f1=0.8087  best_val_f1=0.8103
+Epoch 71/500  train_loss=0.396567  val_f1=0.8104  best_val_f1=0.8124
+Epoch 81/500  train_loss=0.393790  val_f1=0.8122  best_val_f1=0.8127
+Epoch 91/500  train_loss=0.391754  val_f1=0.8056  best_val_f1=0.8128
+Epoch 101/500  train_loss=0.389948  val_f1=0.8074  best_val_f1=0.8128
+Early stopping triggered
+Test F1: 0.8142
+[I 2025-11-11 02:51:05,023] Trial 16 finished with value: 0.18719117647058825 and parameters: {'lr': 0.001, 'batch_size': 512, 'd_model': 32, 'nhead': 8, 'nlayers': 3, 'dim_ff': 256, 'dropout': 0.4}. Best is trial 12 with value: 0.18710784313725493.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.670627  val_f1=0.5817  best_val_f1=0.5817
+Epoch 11/500  train_loss=0.448576  val_f1=0.7813  best_val_f1=0.7813
+Epoch 21/500  train_loss=0.424251  val_f1=0.7967  best_val_f1=0.7998
+Epoch 31/500  train_loss=0.414908  val_f1=0.8031  best_val_f1=0.8031
+Epoch 41/500  train_loss=0.408443  val_f1=0.8033  best_val_f1=0.8063
+Epoch 51/500  train_loss=0.404316  val_f1=0.8060  best_val_f1=0.8081
+Epoch 61/500  train_loss=0.401444  val_f1=0.8101  best_val_f1=0.8101
+Epoch 71/500  train_loss=0.398475  val_f1=0.8102  best_val_f1=0.8102
+Epoch 81/500  train_loss=0.396213  val_f1=0.8094  best_val_f1=0.8115
+Epoch 91/500  train_loss=0.394780  val_f1=0.8123  best_val_f1=0.8123
+Epoch 101/500  train_loss=0.392368  val_f1=0.8106  best_val_f1=0.8123
+Epoch 111/500  train_loss=0.390199  val_f1=0.8122  best_val_f1=0.8123
+Early stopping triggered
+Test F1: 0.8139
+[I 2025-11-11 03:13:06,869] Trial 17 finished with value: 0.18771568627450985 and parameters: {'lr': 0.001, 'batch_size': 512, 'd_model': 32, 'nhead': 8, 'nlayers': 3, 'dim_ff': 256, 'dropout': 0.4}. Best is trial 12 with value: 0.18710784313725493.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.685878  val_f1=0.5501  best_val_f1=0.5501
+Epoch 11/500  train_loss=0.634433  val_f1=0.6185  best_val_f1=0.6185
+Epoch 21/500  train_loss=0.557682  val_f1=0.6976  best_val_f1=0.6988
+Epoch 31/500  train_loss=0.518416  val_f1=0.7270  best_val_f1=0.7270
+Epoch 41/500  train_loss=0.490932  val_f1=0.7148  best_val_f1=0.7287
+Epoch 51/500  train_loss=0.471449  val_f1=0.7278  best_val_f1=0.7292
+Epoch 61/500  train_loss=0.459334  val_f1=0.7256  best_val_f1=0.7350
+Epoch 71/500  train_loss=0.449854  val_f1=0.7279  best_val_f1=0.7397
+Epoch 81/500  train_loss=0.441691  val_f1=0.7333  best_val_f1=0.7415
+Epoch 91/500  train_loss=0.436684  val_f1=0.7403  best_val_f1=0.7415
+Epoch 101/500  train_loss=0.431005  val_f1=0.7326  best_val_f1=0.7469
+Epoch 111/500  train_loss=0.427541  val_f1=0.7331  best_val_f1=0.7469
+Early stopping triggered
+Test F1: 0.7489
+[I 2025-11-11 03:35:57,149] Trial 18 finished with value: 0.2530539215686275 and parameters: {'lr': 0.0001, 'batch_size': 512, 'd_model': 64, 'nhead': 8, 'nlayers': 3, 'dim_ff': 32, 'dropout': 0.3}. Best is trial 12 with value: 0.18710784313725493.
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.655333  val_f1=0.6518  best_val_f1=0.6518
+Epoch 11/500  train_loss=0.416493  val_f1=0.8004  best_val_f1=0.8004
+Epoch 21/500  train_loss=0.400694  val_f1=0.8070  best_val_f1=0.8100
+Epoch 31/500  train_loss=0.391736  val_f1=0.8073  best_val_f1=0.8104
+Epoch 41/500  train_loss=0.385772  val_f1=0.8094  best_val_f1=0.8134
+Epoch 51/500  train_loss=0.380783  val_f1=0.8120  best_val_f1=0.8162
+Epoch 61/500  train_loss=0.374895  val_f1=0.8088  best_val_f1=0.8162
+Early stopping triggered
+Test F1: 0.8168
+[I 2025-11-11 03:53:14,773] Trial 19 finished with value: 0.1837794117647059 and parameters: {'lr': 0.001, 'batch_size': 256, 'd_model': 32, 'nhead': 8, 'nlayers': 3, 'dim_ff': 128, 'dropout': 0.2}. Best is trial 19 with value: 0.1837794117647059.
+2025-11-11 03:53:14,773 | INFO | Best trial: 19
+2025-11-11 03:53:14,773 | INFO | Best value: 0.1837794117647059
+2025-11-11 03:53:14,773 | INFO | Best params: {'lr': 0.001, 'batch_size': 256, 'd_model': 32, 'nhead': 8, 'nlayers': 3, 'dim_ff': 128, 'dropout': 0.2}
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+Epoch 1/500  train_loss=0.538812  val_f1=0.7256  best_val_f1=0.7256
+Epoch 11/500  train_loss=0.366323  val_f1=0.8174  best_val_f1=0.8198
+Epoch 21/500  train_loss=0.352384  val_f1=0.8316  best_val_f1=0.8316
+Epoch 31/500  train_loss=0.345522  val_f1=0.8206  best_val_f1=0.8343
+Epoch 41/500  train_loss=0.341033  val_f1=0.8321  best_val_f1=0.8364
+Epoch 51/500  train_loss=0.337240  val_f1=0.8358  best_val_f1=0.8397
+Epoch 61/500  train_loss=0.333992  val_f1=0.8327  best_val_f1=0.8403
+Epoch 71/500  train_loss=0.330797  val_f1=0.8422  best_val_f1=0.8424
+Epoch 81/500  train_loss=0.326842  val_f1=0.8415  best_val_f1=0.8457
+Epoch 91/500  train_loss=0.321730  val_f1=0.8458  best_val_f1=0.8458
+Epoch 101/500  train_loss=0.317198  val_f1=0.8451  best_val_f1=0.8458
+Epoch 111/500  train_loss=0.313029  val_f1=0.8471  best_val_f1=0.8499
+Epoch 121/500  train_loss=0.308794  val_f1=0.8400  best_val_f1=0.8499
+Early stopping triggered
+Test F1: 0.8509
+2025-11-11 04:49:07,949 | INFO | Saved best model to model/case30_cnn_transformer.pth
+2025-11-11 04:49:07,949 | INFO | Logs written to logs/cnn_run.log

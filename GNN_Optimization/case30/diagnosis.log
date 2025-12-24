@@ -1,0 +1,176 @@
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/scipy/optimize/_slsqp_py.py:437: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  fx = wrapped_fun(x)
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/scipy/optimize/_slsqp_py.py:441: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  g = append(wrapped_grad(x), 0.0)
+/media/mldadmin/home/s123mdg36_03/anaconda3/envs/power/lib/python3.10/site-packages/scipy/optimize/_slsqp_py.py:495: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  a_eq = vstack([con['jac'](x, *con['args'])
+
+=== Statistics for 1 fault lines ===
+GAT-CNN (proposed, strong): mean=0.0000, var=0.0000, 95% CI=(0.0000, 0.0000)
+GAT baseline (strong): mean=0.0000, var=0.0000, 95% CI=(0.0000, 0.0000)
+GCN baseline (strong): mean=0.0000, var=0.0000, 95% CI=(0.0000, 0.0000)
+CNN-Transformer (strong): mean=0.0000, var=0.0000, 95% CI=(0.0000, 0.0000)
+GAE (strong): mean=0.0000, var=0.0000, 95% CI=(0.0000, 0.0000)
+FLD (weak): mean=0.0703, var=0.0663, 95% CI=(0.0477, 0.0928)
+Paired t-test GAT-CNN (proposed) vs GAT baseline: t=1.1632, p=2.4530e-01
+Paired t-test GAT-CNN (proposed) vs GCN baseline: t=-0.4846, p=6.2816e-01
+Paired t-test GAT-CNN (proposed) vs CNN-Transformer: t=-0.4821, p=6.2995e-01
+Paired t-test GAT-CNN (proposed) vs GAE: t=-0.0095, p=9.9239e-01
+Paired t-test GAT-CNN (proposed) vs FLD: t=-6.1003, p=2.1253e-09
+
+For 1 fault lines, the MSE of the GAT-CNN (proposed, strong) is: 2.6435506776524135e-07
+
+For 1 fault lines, the MSE of the GAT baseline (strong) is: 1.6747124371973055e-07
+For 1 fault lines, the MSE of the GCN baseline (strong) is: 3.367164179737109e-07
+For 1 fault lines, the MSE of the CNN-Transformer (strong) is: 3.5090234666192537e-07
+For 1 fault lines, the MSE of the GAE (strong) is: 2.6521851091465454e-07
+For 1 fault lines, the MSE of the FLD (weak baseline) is: 0.0702542441156362
+
+=== Statistics for 2 fault lines ===
+GAT-CNN (proposed, strong): mean=0.0199, var=0.0148, 95% CI=(0.0093, 0.0306)
+GAT baseline (strong): mean=0.0243, var=0.0181, 95% CI=(0.0125, 0.0361)
+GCN baseline (strong): mean=0.0243, var=0.0181, 95% CI=(0.0126, 0.0361)
+CNN-Transformer (strong): mean=0.0198, var=0.0146, 95% CI=(0.0092, 0.0304)
+GAE (strong): mean=0.0199, var=0.0148, 95% CI=(0.0093, 0.0306)
+FLD (weak): mean=0.1064, var=0.0596, 95% CI=(0.0850, 0.1278)
+Paired t-test GAT-CNN (proposed) vs GAT baseline: t=-1.3204, p=1.8730e-01
+Paired t-test GAT-CNN (proposed) vs GCN baseline: t=-1.3229, p=1.8646e-01
+Paired t-test GAT-CNN (proposed) vs CNN-Transformer: t=0.0747, p=9.4045e-01
+Paired t-test GAT-CNN (proposed) vs GAE: t=1.1998, p=2.3079e-01
+Paired t-test GAT-CNN (proposed) vs FLD: t=-8.6230, p=8.7080e-17
+
+For 2 fault lines, the MSE of the GAT-CNN (proposed, strong) is: 0.01994728467742503
+
+For 2 fault lines, the MSE of the GAT baseline (strong) is: 0.02432343153778515
+For 2 fault lines, the MSE of the GCN baseline (strong) is: 0.024331773307193477
+For 2 fault lines, the MSE of the CNN-Transformer (strong) is: 0.01980366525120296
+For 2 fault lines, the MSE of the GAE (strong) is: 0.019946929199205984
+For 2 fault lines, the MSE of the FLD (weak baseline) is: 0.10641405265454176
+
+=== Statistics for 3 fault lines ===
+GAT-CNN (proposed, strong): mean=0.0414, var=0.0282, 95% CI=(0.0266, 0.0561)
+GAT baseline (strong): mean=0.0509, var=0.0321, 95% CI=(0.0352, 0.0666)
+GCN baseline (strong): mean=0.0509, var=0.0321, 95% CI=(0.0352, 0.0666)
+CNN-Transformer (strong): mean=0.0469, var=0.0307, 95% CI=(0.0315, 0.0622)
+GAE (strong): mean=0.0399, var=0.0262, 95% CI=(0.0257, 0.0541)
+FLD (weak): mean=0.1811, var=0.0766, 95% CI=(0.1568, 0.2054)
+Paired t-test GAT-CNN (proposed) vs GAT baseline: t=-1.8686, p=6.2262e-02
+Paired t-test GAT-CNN (proposed) vs GCN baseline: t=-1.8686, p=6.2263e-02
+Paired t-test GAT-CNN (proposed) vs CNN-Transformer: t=-1.2481, p=2.1259e-01
+Paired t-test GAT-CNN (proposed) vs GAE: t=0.4103, p=6.8180e-01
+Paired t-test GAT-CNN (proposed) vs FLD: t=-12.2264, p=2.9894e-30
+
+For 3 fault lines, the MSE of the GAT-CNN (proposed, strong) is: 0.04136423456418878
+
+For 3 fault lines, the MSE of the GAT baseline (strong) is: 0.05089671452488986
+For 3 fault lines, the MSE of the GCN baseline (strong) is: 0.050896700744279294
+For 3 fault lines, the MSE of the CNN-Transformer (strong) is: 0.04689493654856617
+For 3 fault lines, the MSE of the GAE (strong) is: 0.03988490420046989
+For 3 fault lines, the MSE of the FLD (weak baseline) is: 0.18110420434791075
+
+=== Statistics for 4 fault lines ===
+GAT-CNN (proposed, strong): mean=0.0632, var=0.0347, 95% CI=(0.0469, 0.0795)
+GAT baseline (strong): mean=0.0883, var=0.0436, 95% CI=(0.0700, 0.1066)
+GCN baseline (strong): mean=0.0884, var=0.0436, 95% CI=(0.0701, 0.1067)
+CNN-Transformer (strong): mean=0.0746, var=0.0393, 95% CI=(0.0572, 0.0920)
+GAE (strong): mean=0.0653, var=0.0360, 95% CI=(0.0487, 0.0819)
+FLD (weak): mean=0.2245, var=0.0736, 95% CI=(0.2007, 0.2483)
+Paired t-test GAT-CNN (proposed) vs GAT baseline: t=-4.2580, p=2.4655e-05
+Paired t-test GAT-CNN (proposed) vs GCN baseline: t=-4.2862, p=2.1820e-05
+Paired t-test GAT-CNN (proposed) vs CNN-Transformer: t=-2.5444, p=1.1247e-02
+Paired t-test GAT-CNN (proposed) vs GAE: t=-0.5761, p=5.6484e-01
+Paired t-test GAT-CNN (proposed) vs FLD: t=-14.7274, p=5.0220e-41
+
+For 4 fault lines, the MSE of the GAT-CNN (proposed, strong) is: 0.06318719705205304
+
+For 4 fault lines, the MSE of the GAT baseline (strong) is: 0.08832057854841532
+For 4 fault lines, the MSE of the GCN baseline (strong) is: 0.0884406153419359
+For 4 fault lines, the MSE of the CNN-Transformer (strong) is: 0.0745956852009281
+For 4 fault lines, the MSE of the GAE (strong) is: 0.06529143169878172
+For 4 fault lines, the MSE of the FLD (weak baseline) is: 0.2244901095592821
+
+=== Statistics for 5 fault lines ===
+GAT-CNN (proposed, strong): mean=0.0979, var=0.0430, 95% CI=(0.0797, 0.1161)
+GAT baseline (strong): mean=0.1222, var=0.0495, 95% CI=(0.1027, 0.1417)
+GCN baseline (strong): mean=0.1220, var=0.0494, 95% CI=(0.1025, 0.1415)
+CNN-Transformer (strong): mean=0.1080, var=0.0462, 95% CI=(0.0892, 0.1268)
+GAE (strong): mean=0.1025, var=0.0457, 95% CI=(0.0838, 0.1212)
+FLD (weak): mean=0.2548, var=0.0648, 95% CI=(0.2325, 0.2771)
+Paired t-test GAT-CNN (proposed) vs GAT baseline: t=-3.4026, p=7.2107e-04
+Paired t-test GAT-CNN (proposed) vs GCN baseline: t=-3.3705, p=8.0857e-04
+Paired t-test GAT-CNN (proposed) vs CNN-Transformer: t=-1.9538, p=5.1285e-02
+Paired t-test GAT-CNN (proposed) vs GAE: t=-0.9866, p=3.2434e-01
+Paired t-test GAT-CNN (proposed) vs FLD: t=-14.6566, p=1.0415e-40
+
+For 5 fault lines, the MSE of the GAT-CNN (proposed, strong) is: 0.09790446169158881
+
+For 5 fault lines, the MSE of the GAT baseline (strong) is: 0.12224151828182393
+For 5 fault lines, the MSE of the GCN baseline (strong) is: 0.12199247321412282
+For 5 fault lines, the MSE of the CNN-Transformer (strong) is: 0.10801051814322955
+For 5 fault lines, the MSE of the GAE (strong) is: 0.10249317370062454
+For 5 fault lines, the MSE of the FLD (weak baseline) is: 0.2548082654774421
+
+=== Statistics for 6 fault lines ===
+GAT-CNN (proposed, strong): mean=0.1088, var=0.0314, 95% CI=(0.0933, 0.1243)
+GAT baseline (strong): mean=0.1222, var=0.0344, 95% CI=(0.1060, 0.1385)
+GCN baseline (strong): mean=0.1227, var=0.0343, 95% CI=(0.1064, 0.1389)
+CNN-Transformer (strong): mean=0.1214, var=0.0343, 95% CI=(0.1051, 0.1376)
+GAE (strong): mean=0.1140, var=0.0331, 95% CI=(0.0980, 0.1299)
+FLD (weak): mean=0.2399, var=0.0496, 95% CI=(0.2204, 0.2594)
+Paired t-test GAT-CNN (proposed) vs GAT baseline: t=-2.5690, p=1.0488e-02
+Paired t-test GAT-CNN (proposed) vs GCN baseline: t=-2.6564, p=8.1505e-03
+Paired t-test GAT-CNN (proposed) vs CNN-Transformer: t=-3.0801, p=2.1836e-03
+Paired t-test GAT-CNN (proposed) vs GAE: t=-2.1890, p=2.9057e-02
+Paired t-test GAT-CNN (proposed) vs FLD: t=-15.0375, p=2.0271e-42
+
+For 6 fault lines, the MSE of the GAT-CNN (proposed, strong) is: 0.10881085102926688
+
+For 6 fault lines, the MSE of the GAT baseline (strong) is: 0.12223022849539547
+For 6 fault lines, the MSE of the GCN baseline (strong) is: 0.12267281741051284
+For 6 fault lines, the MSE of the CNN-Transformer (strong) is: 0.12135542575940705
+For 6 fault lines, the MSE of the GAE (strong) is: 0.11396568810661983
+For 6 fault lines, the MSE of the FLD (weak baseline) is: 0.23988559675741977
+
+=== Statistics for 7 fault lines ===
+GAT-CNN (proposed, strong): mean=0.1134, var=0.0242, 95% CI=(0.0998, 0.1270)
+GAT baseline (strong): mean=0.1302, var=0.0279, 95% CI=(0.1155, 0.1448)
+GCN baseline (strong): mean=0.1306, var=0.0278, 95% CI=(0.1160, 0.1453)
+CNN-Transformer (strong): mean=0.1232, var=0.0274, 95% CI=(0.1087, 0.1377)
+GAE (strong): mean=0.1156, var=0.0245, 95% CI=(0.1019, 0.1294)
+FLD (weak): mean=0.2890, var=0.0384, 95% CI=(0.2718, 0.3062)
+Paired t-test GAT-CNN (proposed) vs GAT baseline: t=-3.7728, p=1.8082e-04
+Paired t-test GAT-CNN (proposed) vs GCN baseline: t=-3.8905, p=1.1360e-04
+Paired t-test GAT-CNN (proposed) vs CNN-Transformer: t=-2.7664, p=5.8778e-03
+Paired t-test GAT-CNN (proposed) vs GAE: t=-2.0946, p=3.6711e-02
+Paired t-test GAT-CNN (proposed) vs FLD: t=-21.0028, p=1.2103e-70
+
+For 7 fault lines, the MSE of the GAT-CNN (proposed, strong) is: 0.11338314709753268
+
+For 7 fault lines, the MSE of the GAT baseline (strong) is: 0.13017386550231894
+For 7 fault lines, the MSE of the GCN baseline (strong) is: 0.13064329162280994
+For 7 fault lines, the MSE of the CNN-Transformer (strong) is: 0.12320907565357796
+For 7 fault lines, the MSE of the GAE (strong) is: 0.1156357938096251
+For 7 fault lines, the MSE of the FLD (weak baseline) is: 0.28898875886898384
+
+=== Statistics for 8 fault lines ===
+GAT-CNN (proposed, strong): mean=0.1680, var=0.0247, 95% CI=(0.1542, 0.1817)
+GAT baseline (strong): mean=0.1686, var=0.0257, 95% CI=(0.1546, 0.1827)
+GCN baseline (strong): mean=0.1681, var=0.0255, 95% CI=(0.1541, 0.1820)
+CNN-Transformer (strong): mean=0.1696, var=0.0257, 95% CI=(0.1556, 0.1837)
+GAE (strong): mean=0.1677, var=0.0253, 95% CI=(0.1538, 0.1817)
+FLD (weak): mean=0.2798, var=0.0326, 95% CI=(0.2640, 0.2956)
+Paired t-test GAT-CNN (proposed) vs GAT baseline: t=-0.5049, p=6.1386e-01
+Paired t-test GAT-CNN (proposed) vs GCN baseline: t=-0.0734, p=9.4151e-01
+Paired t-test GAT-CNN (proposed) vs CNN-Transformer: t=-1.2594, p=2.0848e-01
+Paired t-test GAT-CNN (proposed) vs GAE: t=0.2378, p=8.1211e-01
+Paired t-test GAT-CNN (proposed) vs FLD: t=-17.7834, p=3.6805e-55
+
+For 8 fault lines, the MSE of the GAT-CNN (proposed, strong) is: 0.1679695973026377
+
+For 8 fault lines, the MSE of the GAT baseline (strong) is: 0.1686229542502872
+For 8 fault lines, the MSE of the GCN baseline (strong) is: 0.16805505292843206
+For 8 fault lines, the MSE of the CNN-Transformer (strong) is: 0.16962636138334058
+For 8 fault lines, the MSE of the GAE (strong) is: 0.16774273449801272
+For 8 fault lines, the MSE of the FLD (weak baseline) is: 0.27980648630132743

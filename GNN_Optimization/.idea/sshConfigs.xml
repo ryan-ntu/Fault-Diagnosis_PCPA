@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="gpu36.dynip.ntu.edu.sg" id="ace4ad50-9afc-4824-b1f0-0e3593b6c6ce" port="22" nameFormat="DESCRIPTIVE" username="s123mdg36_03" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>
